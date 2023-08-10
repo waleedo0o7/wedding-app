@@ -56,13 +56,10 @@
   padding: 17rem 0px 40px 0 !important;
 }
 
-
 .section-heading {
   width: 100%;
   text-align: center;
 }
-
-
 
 html[dir="rtl"] {
 }
@@ -110,4 +107,16 @@ html[dir="rtl"] .blog_single__content.mt-5 {
 
 html[dir="rtl"] body {
   font-family: "Cairo", sans-serif;
+}
+
+html[dir="rtl"] .header__nav {
+  top: -5rem;
+  right: unset;
+  left: 100%;
+}
+
+@media (max-width: 991.98px) {
+  html[dir="rtl"] .questions-img {
+    text-align: center !important;
+  }
 }

@@ -2,14 +2,14 @@
 transform
 ********************/
 $(window).on('load', () => {
-    let ua = navigator.userAgent.toLowerCase(); 
+    let ua = navigator.userAgent.toLowerCase();
     let isSafari = false;
     try {
         isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
     }
-    catch(err) {}
-    isSafari = (isSafari || ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1))));
-    if ( isSafari ) {
+    catch (err) { }
+    isSafari = (isSafari || ((ua.indexOf('safari') != -1) && (!(ua.indexOf('chrome') != -1) && (ua.indexOf('version/') != -1))));
+    if (isSafari) {
         document.querySelector(':root').style.setProperty('--transform-fix', 'translateZ(0)');
     }
 })
@@ -22,26 +22,58 @@ $(".header .header__bars").on('click', function () {
 
     var selector = $(".header .header__nav")
 
-    if (selector.hasClass('shown')) {
-        selector.css('right', "100%");
-        selector.removeClass('shown');
+    if ($("html").attr("dir") == "ltr") {
+
+        if (selector.hasClass('shown')) {
+            selector.css('right', "100%");
+            selector.removeClass('shown');
+        } else {
+            selector.css('right', "0");
+            selector.addClass('shown');
+        }
+
     } else {
-        selector.css('right', "0");
-        selector.addClass('shown');
+
+        if (selector.hasClass('shown')) {
+            selector.css('left', "100%");
+            selector.removeClass('shown');
+        } else {
+            selector.css('left', "0");
+            selector.addClass('shown');
+        }
     }
+
 });
 
-$(".header .header__nav span").on('click', function () {
+$(".header .header__nav #close-menu").on('click', function () {
 
     var selector = $(".header .header__nav")
 
-    if (selector.hasClass('shown')) {
-        selector.css('right', "100%");
-        selector.removeClass('shown');
+    if ($("html").attr("dir") == "ltr") {
+
+        if (selector.hasClass('shown')) {
+            selector.css('right', "100%");
+            selector.removeClass('shown');
+        } else {
+            selector.css('right', "0");
+            selector.addClass('shown');
+        }
+
     } else {
-        selector.css('right', "0");
-        selector.addClass('shown');
+
+
+        if (selector.hasClass('shown')) {
+            selector.css('left', "100%");
+            selector.removeClass('shown');
+        } else {
+            selector.css('left', "0");
+            selector.addClass('shown');
+        }
+
+
     }
+
+
 });
 
 $(document).on('click', 'a[href^="#"]', function (event) {

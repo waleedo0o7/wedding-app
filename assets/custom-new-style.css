@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+.header.fixed {
+  padding: 1.8rem 0 5rem 0;
+}
+
+.preloader {
+  background: linear-gradient(45deg, #31434f 0%, #546d80 50%, #31434f 100%);
+}
+
+.hero__wrapper,
+.growth__wrapper,
+.footer__wrapper {
+  background-color: #f6f6f6;
+}
+
+.hero .hero-img::before,
+.feature__box .icon-1,
+.feature__box .icon-2,
+.feature__box .icon-3,
+.feature__box .icon-4 {
+  background: linear-gradient(45deg, #31434f 0%, #546d80 50%, #31434f 100%);
+  -webkit-filter: drop-shadow(0px 10px 10px #c4c4c4);
+}
+
+.download-buttons a.google-play {
+  background: linear-gradient(0deg, #31434f 0%, #31434f 50%, #d9b15c 100%);
+  -webkit-filter: drop-shadow(0px 10px 10px #c4c4c4);
+}
+
+.download-buttons a.apple-store {
+  background: linear-gradient(0deg, #31434f 0%, #31434f 50%, #d9b15c 100%);
+  -webkit-filter: drop-shadow(0px 10px 10px #c4c4c4);
+}
+
+.header__nav-primary > li:first-child a {
+  color: #666b6d;
+}
+
+.feature__box--1 .feature__box__wrapper,
+.feature__box--2 .feature__box__wrapper,
+.feature__box--3 .feature__box__wrapper,
+.feature__box--4 .feature__box__wrapper {
+  background-color: #d9b15c;
+}
+
+.growth__box .icon {
+  background: linear-gradient(45deg, #31434f 0%, #546d80 50%, #31434f 100%);
+}
+
+.growth__box .icon i {
+  color: #fff;
+}
+
+.blog_hero__wrapper {
+  padding: 17rem 0px 40px 0 !important;
+}
+
+
+.section-heading {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+html[dir="rtl"] {
+}
+
+html[dir="rtl"] .hero__wrapper .row {
+  text-align: right;
+}
+
+html[dir="rtl"] .questions-img {
+  text-align: left;
+}
+
+html[dir="rtl"] .download-buttons a .button-content {
+  margin-left: unset;
+  margin-right: 1.3rem;
+}
+
+html[dir="rtl"] .growth .row > div:nth-child(odd) .growth__box .content::before {
+  left: unset;
+  right: -3.3rem;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+html[dir="rtl"] .growth .row > div:nth-child(even) .growth__box .content::after {
+  right: unset;
+  left: -3.3rem;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+html[dir="rtl"] .screenshot-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header__nav-primary > li {
+  margin-left: unset !important;
+  margin-right: 3rem;
+}
+
+html[dir="rtl"] .blog_single__content.mt-5 {
+  text-align: right;
+}
+
+html[dir="rtl"] body {
+  font-family: "Cairo", sans-serif;
+}

@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
 .header.fixed {
-  padding: 1.8rem 0 5rem 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.header__wrapper {
+  align-items: center;
 }
 
 .preloader {
@@ -119,13 +123,38 @@ html[dir="rtl"] .growth__box .content h3 {
   text-align: right;
 }
 
-
-html[dir="rtl"]  .growth__box .content p{
+html[dir="rtl"] .growth__box .content p {
   text-align: right;
 }
 
-
 @media (max-width: 991.98px) {
+  .header__nav {
+    background: linear-gradient(45deg, #31434f 0%, #546d80 50%, #31434f 100%);
+  }
+
+  .header__nav-primary > li:first-child a {
+    color: #fff;
+  }
+
+  .header__nav li {
+    margin: 0 !important;
+  }
+
+  .header__nav li:hover {
+    background-color: transparent;
+  }
+
+  .header__nav li:hover a,
+  .header__nav li:hover i {
+    color: #fff;
+  }
+
+  .header__nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   html[dir="rtl"] .questions-img {
     text-align: center !important;
   }

@@ -115,6 +115,16 @@ html[dir="rtl"] .header__nav {
   left: 100%;
 }
 
+html[dir="rtl"] .growth__box .content h3 {
+  text-align: right;
+}
+
+
+html[dir="rtl"]  .growth__box .content p{
+  text-align: right;
+}
+
+
 @media (max-width: 991.98px) {
   html[dir="rtl"] .questions-img {
     text-align: center !important;

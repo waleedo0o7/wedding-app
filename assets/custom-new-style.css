@@ -127,7 +127,7 @@ html[dir="rtl"] .growth__box .content p {
   text-align: right;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
   .header__nav {
     background: linear-gradient(45deg, #31434f 0%, #546d80 50%, #31434f 100%);
   }
@@ -153,6 +153,22 @@ html[dir="rtl"] .growth__box .content p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .header__nav li a.active {
+    color: #dab15b;
+  }
+
+  .hero__wrapper .col-lg-6.order-2.order-lg-1 {
+    margin-top: 70px;
+  }
+
+  .header__wrapper {
+    padding: 0 2.5rem;
+  }
+
+  html[dir="rtl"] .header__bars {
+    transform: rotateY(180deg);
   }
 
   html[dir="rtl"] .questions-img {

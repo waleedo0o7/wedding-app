@@ -169,6 +169,8 @@ html[dir="rtl"] .growth__box .content p {
 
   html[dir="rtl"] .header__bars {
     transform: rotateY(180deg);
+    background: #f6f6f6;
+    border-radius: 5px;
   }
 
   html[dir="rtl"] .questions-img {

@@ -65,6 +65,19 @@
   text-align: center;
 }
 
+.header__nav-primary > li > a.active {
+  color: #d9b15c;
+}
+
+.header__nav-primary > li > a.active {
+  color: #d9b15c;
+}
+
+.header__nav-primary > li > a.active:before {
+  width: calc(100% - 2rem);
+  background: #d9b15c;
+}
+
 html[dir="rtl"] {
 }
 

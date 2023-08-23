@@ -85,6 +85,7 @@
 }
 
 .action-wrapper {
+  width: 480px !important;
   max-width: 100%;
 }
 

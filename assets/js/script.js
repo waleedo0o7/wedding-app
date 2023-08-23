@@ -189,7 +189,7 @@ var related_post = new Swiper('.blog_related-slider', {
 });
 
 /********************
-accordion
+accoradion
 ********************/
 $('.card').on('hide.bs.collapse', function (e) {
     var parentId = $(e.target).parent().attr('id');
